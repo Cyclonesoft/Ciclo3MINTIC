@@ -10,7 +10,11 @@ public class Profile {
     @GeneratedValue(strategy= GenerationType.AUTO)
     private String id;
     private String image, phone;
-    private String users;
+
+    //@OneToOne
+    //@JoinColumn(name="user")
+    //private Employee user;
+
     private LocalDate createdAt, updateAt;
 
 }
